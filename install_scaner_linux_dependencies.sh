@@ -119,6 +119,7 @@ fi
 # Step 8: Create default files if they don't exist
 log_message "$GREEN" "INFO" "Checking for known_devices.txt and onvif_credentials.txt..."
 if [ ! -f "known_devices.txt" ]; then
+    # generate a dummy file
     echo "# Example MAC addresses" > known_devices.txt
     echo "b8:27:eb:12:34:56 # Raspberry Pi" >> known_devices.txt
     echo "ac:22:0b:84:e8:42 # Samsung Smart TV" >> known_devices.txt
